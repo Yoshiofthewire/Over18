@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+dist/**
+*.flatpak
+*.AppImage
+
+# Flatpak build staging
+__flatpak-*/
+
+# Electron-builder
+release/
+
+# User-specific
+/.age
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Coverage & cache
+coverage/
+.nyc_output/
+.cache/
+
+# Misc
+*.tgz
+*.zip

@@ -1,0 +1,38 @@
+{
+  "name": "over18",
+  "version": "1.0.0",
+  "description": "A joke application that makes fun of California's Assembly Bill 1043",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "org.over18.Over18",
+    "productName": "Over 18",
+    "linux": {
+      "target": [
+        "flatpak"
+      ],
+      "category": "Utility"
+    },
+    "flatpak": {
+      "runtimeVersion": "24.08",
+      "baseVersion": "24.08",
+      "finishArgs": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--device=dri",
+        "--filesystem=home"
+      ]
+    }
+  }
+}

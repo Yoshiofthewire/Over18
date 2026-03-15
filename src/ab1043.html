@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>AB 1043</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; padding: 20px; color: #333; background: #f5f5f5; line-height: 1.6; }
+    h1 { font-size: 22px; margin-bottom: 16px; }
+    h2 { font-size: 18px; margin-top: 20px; margin-bottom: 10px; }
+    p { margin-bottom: 12px; }
+    .section { background: white; border-radius: 6px; padding: 16px; margin-bottom: 16px; border: 1px solid #ddd; }
+    .note { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 12px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>California Assembly Bill 1043</h1>
+
+  <div class="section">
+    <h2>What This Application Does</h2>
+    <p>
+      This application allows age attestation for Linux systems to comply with California Assembly Bill 1043 (AB 1043).
+      When a user attests their age, the application writes a <code>.age</code> file to the user's home directory
+      with a simple environment-variable-style declaration of whether the user is over 18.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>What is Attestation?</h2>
+    <p>
+      <strong>Attestation</strong> is a formal declaration or confirmation that something is true.
+      In this context, age attestation means the user is declaring — on their own authority — whether
+      they are over or under the age of 18. This is a self-declaration; no identity verification or
+      document checking is performed.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Text of AB 1043</h2>
+    <p>
+      Assembly Bill No. 1043 — introduced in the California State Legislature — seeks to require
+      that operating systems and platforms provide a mechanism for users to signal their age.
+      The bill addresses age-appropriate design and content restrictions by establishing a
+      framework through which software can determine whether a user has attested to being
+      over or under 18 years of age.
+    </p>
+    <p>
+      The full text of the bill is available at:<br>
+      <a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043">
+        https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043
+      </a>
+    </p>
+  </div>
+
+  <div class="note">
+    <h2>Other Jurisdictions</h2>
+    <p>
+      Note: Similar age verification and attestation requirements may apply in other jurisdictions.
+      Colorado, for example, has enacted comparable legislation regarding age-appropriate design
+      codes and online protections for minors. Compliance with AB 1043 may help satisfy
+      requirements in these other jurisdictions as well.
+    </p>
+  </div>
+</body>
+</html>

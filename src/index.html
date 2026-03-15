@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'">
+  <title>Over 18</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Are you over 18?</h2>
+
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="over18" value="under"> I am under 18
+      </label>
+      <label>
+        <input type="radio" name="over18" value="over"> I am over 18
+      </label>
+    </div>
+
+    <div id="age-group" class="age-group hidden">
+      <label for="age-select">Select your age range:</label>
+      <select id="age-select">
+        <option value="" disabled selected>-- Select --</option>
+        <option value="12">Under 13</option>
+        <option value="15">Under 16</option>
+        <option value="17">Under 18</option>
+      </select>
+    </div>
+
+    <button id="save-btn" class="save-btn">Save</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+app-id: org.over18.Over18
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+base: org.electronjs.Electron2.BaseApp
+base-version: '24.08'
+command: over18
+separate-locales: false
+
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=home
+
+modules:
+  - name: over18
+    buildsystem: simple
+    sources:
+      - type: dir
+        path: ..
+    build-commands:
+      - install -d /app/lib/over18
+      - cp -r . /app/lib/over18/
+      - install -Dm755 over18.sh /app/bin/over18
+    post-install:
+      - install -Dm644 flatpak/org.over18.Over18.desktop /app/share/applications/org.over18.Over18.desktop

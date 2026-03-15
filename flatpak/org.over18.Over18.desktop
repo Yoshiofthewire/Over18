@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Over 18
+Comment=Age attestation for Linux - a joke about AB 1043
+Exec=over18
+Icon=org.over18.Over18
+Terminal=false
+Type=Application
+Categories=Utility;
